@@ -1,11 +1,11 @@
-/* Basic Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styles */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -29,7 +29,7 @@ body::before {
     z-index: -1;
 }
 
-/* Navigation Bar Styles */
+
 nav {
     background-color: #222;
     padding: 10px;
@@ -55,7 +55,7 @@ nav a {
     text-decoration: none;
 }
 
-/* Header Styles */
+
 header {
     margin: 20px;
     padding: 20px;
@@ -107,17 +107,56 @@ h1 {
     background: transparent;
 }
 
-.antique-stage {
+/*.antique-stage {
     flex: 1;
-    width: 700px;
-    height: 500px;
-    object-fit: cover;
-    align-self: stretch;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    align-self:baseline;
     margin-left: 10px;
     justify-content: end;
-    padding-top: 27px;
+    padding-top: 2px;
     border-radius: 25px;
+}*/
+
+.antique-stage {
+    flex: 1;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    align-self:baseline;
+    margin-left: 10px;
+    justify-content: end;
+    padding-top: 2px;
+    border-radius: 25px;
+    position: relative;
+    min-width: auto;
 }
+
+@media (max-width: 768px) {
+    .antique-stage {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-top: 20px;
+        padding-top: 0;
+        min-width: auto;
+    }
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .antique-stage {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-top: 20px;
+        min-width: auto;
+    }
+}
+
 
 .info-sections {
     flex: 1;
@@ -152,7 +191,7 @@ a:hover {
     text-decoration: none;
 }
 
-/* Section Styles */
+
 section {
     font-family: Arial, sans-serif;
     color: #fff;
@@ -160,7 +199,7 @@ section {
     align-items: left;
 }
 
-/* Table Styles */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -200,7 +239,7 @@ th {
     line-height: 1.6;
 }
 
-/* Form Styles */
+
 form {
     display: flex;
     flex-direction: column;
@@ -246,7 +285,7 @@ footer {
     padding: 20px;
 }
 
-/* Events Container */
+
 .events-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -256,7 +295,7 @@ footer {
     gap: 30px;
 }
 
-/* Event Article Styles */
+
 .event-article {
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
@@ -281,7 +320,7 @@ footer {
     line-height: 1.6;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 1200px) {
     .welcome-section {
         padding: 15px;
