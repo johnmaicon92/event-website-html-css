@@ -1,0 +1,118 @@
+/* Events Page Specific Styles */
+.events-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.events-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.events-header h1 {
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.event-item {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+    align-items:center;
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.event-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.event-button {
+    background-color: #333;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.event-button:hover {
+    background-color: #444;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .event-button {
+        width: 100%;
+    }
+}
+
+.event-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 20px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.event-date {
+    font-size: 18px;
+    color: #666;
+    font-weight: bold;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .event-item {
+        grid-template-columns: 1fr;
+    }
+    
+    .events-header h1 {
+        font-size: 36px;
+    }
+    
+    .event-title {
+        font-size: 28px;
+    }
+    
+    .event-description {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .events-header h1 {
+        font-size: 28px;
+    }
+    
+    .event-title {
+        font-size: 24px;
+    }
+    
+    .event-description {
+        font-size: 16px;
+    }
+}
