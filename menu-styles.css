@@ -58,7 +58,6 @@
 
 @media (max-width: 768px) {
     .menu-table {
-        display: block;
         overflow-x: auto;
     }
     
